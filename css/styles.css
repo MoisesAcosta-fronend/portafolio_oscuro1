@@ -3,7 +3,7 @@
   --text-color: hsl(0, 0%, 31%);
   --bg-color: hsl(0, 0%, 90%);
   --bg-card-color: hsl(0, 0%, 98%);
-  --transition: color 0.2s, background-color 0.5s ease-in-out;
+  --transition: color 0.2s, background-color 0.4s, border 0.3s ease-in-out;
   --border-radius: 0.4em;
   --skill-bar-length: 0%;
 }
@@ -51,6 +51,7 @@ body.dark {
   background-color: transparent;
   border-radius: var(--border-radius);
   border: 3px solid var(--primary-color);
+  transition: var(--transition);
 }
 .switches {
   display: flex;
@@ -89,6 +90,7 @@ body.dark {
   cursor: pointer;
   background-color: var(--primary-color);
   border-radius: var(--border-radius);
+  transition: var(--transition);
 }
 .colors__item--red {
   --primary-color: hsl(4, 84%, 56%);
@@ -235,6 +237,33 @@ body.dark {
   --skill-bar-length: 100%;
 }
 
+.lenguages {
+  display: flex;
+  align-items: start;
+  margin-bottom: 1em;
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+}
+.lenguages__image {
+  max-width: 35%;
+  margin-right: 1em;
+  margin-top: 1.5em;
+}
+.lenguages__time {
+  font-size: 0.8rem;
+  margin-bottom: 0.5em;
+}
+.lenguages__job {
+  margin: 0;
+  margin-bottom: 0.5em;
+  color: var(--primary-color);
+  transition: var(--transition);
+}
+.lenguages__description {
+  font-size: 0.8rem;
+  margin-bottom: 1.5em;
+}
+
 .experience {
   display: flex;
   align-items: start;
@@ -333,4 +362,3 @@ body.dark {
     transform: translateX(var(--skill-bar-length));
   }
 }
-
